@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+   <!--  this is our beans 
+   We told the meta - data to the container-->    
+    <bean id="address1" class="com.ayushi.Question1.springcore.Question1_Address.Address">  
+<property name="street" value="51,Lohianagar"></property>  
+<property name="city" value="Ghaziabad"></property>  
+<property name="state" value="UP"></property>  
+<property name="zip" value="110098"></property> 
+<property name="country" value="India"></property>  
+</bean>  
+  
+<bean id="obj" class="com.ayushi.Question1.springcore.Question1_Address.Customer">  
+<property name="id" value="1"></property>  
+<property name="name" value="Sachin Yadav"></property>  
+<property name="contact" value="156789016"></property>
+<property name="address" ref="address1"></property>  
+</bean>  
+    
+    	
+       	
+    	
+    
+    
+
+</beans>
